@@ -353,9 +353,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 .education {
     background:  #f9fbfd;
     padding-top:  20px;
+    padding-bottom:  20px;
 }
 .education-horizontal-timeline {
-    padding: 80px 0;
+    padding: 80px 0px;
 }
 
 /*.education-horizontal-timeline*/
@@ -392,7 +393,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         6.  Skills
 --------------------------------------*/
 .skills {
-    text-align: center;
+    text-align: left;
     
     
 }
@@ -464,11 +465,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         7. Experience
 -------------------------------------*/
 .experience {
-    padding: 50px 0 100px;
+    padding: 50px 0 0px;
     border-top: 1px solid #e5ebf2;
 }
 .experience-content {padding-top: 100px;}
-.single-timeline-box {margin-bottom: 75px;}
+.single-timeline-box {margin-bottom: 25px;}
 
 /*experience-time*/
 .experience-time {
@@ -545,11 +546,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         8. Profiles
 --------------------------------------*/
 .profiles {
-    padding:  50px 0 100px;
+    padding:  20px 0 50px;
     border:  1px solid #e5ebf2;
 }
 
-.profiles-content {padding-top: 100px;}
+.profiles-content {padding-top: 20px;}
 .profiles-content .col-sm-3{padding:0;}
 .profile-txt {
     display: flex;
@@ -558,7 +559,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 .single-profile {
     position: relative;
-    height: 150px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
