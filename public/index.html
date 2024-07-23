@@ -1,670 +1,83 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-    <head>
-        <!-- meta data -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        <!--font-family-->
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
-        
-        <!-- title of site -->
-        <title>Maria's Portfolio</title>
-
-
-   
-        <!--font-awesome.min.css-->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-
-		<!--flat icon css-->
-		<link rel="stylesheet" href="assets/css/flaticon.css">
-
-		<!--animate.css-->
-        <link rel="stylesheet" href="assets/css/animate.css">
-
-        <!--owl.carousel.css-->
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-		
-        <!--bootstrap.min.css-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		
-		<!-- bootsnav -->
-		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
-        
-        <!--style.css-->
-        <link rel="stylesheet" href="assets/css/style.css">
-        
-        <!--responsive.css-->
-        <link rel="stylesheet" href="assets/css/responsive.css">
-
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-
-
-    </head>
-	
-	<body>
-	
-		
-		<!-- top-area Start -->
-		<header class="top-area">
-			<div class="header-area">
-				<!-- Start Navigation -->
-			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
-
-			        <div class="container">
-
-			            <!-- Start Header Navigation -->
-			            <div class="navbar-header">
-			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-			                    <i class="fa fa-bars"></i>
-			                </button>
-			                <a class="navbar-brand" href="index.html">Maria Myers</a>
-			            </div><!--/.navbar-header-->
-			            <!-- End Header Navigation -->
-
-			            <!-- Collect the nav links, forms, and other content for toggling -->
-			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-			                <li class=" smooth-menu active"></li>
-			                    <li class=" smooth-menu"><a href="#education">education</a></li>
-			                    <li class="smooth-menu"><a href="#skills">skills</a></li>
-			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
-			                    <li class="smooth-menu"><a href="#profiles">profile</a></li>
-			                    <!-- <li class="smooth-menu"><a href="#portfolio">portfolio</a></li> -->
-			                    <!-- <li class="smooth-menu"><a href="#clients">clients</a></li> -->
-			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
-			                </ul><!--/.nav -->
-			            </div><!-- /.navbar-collapse -->
-			        </div><!--/.container-->
-			    </nav><!--/nav-->
-			    <!-- End Navigation -->
-			</div><!--/.header-area-->
-
-		    <div class="clearfix"></div>
-
-		</header><!-- /.top-area-->
-		<!-- top-area End -->
-	
-		<!--welcome-hero start -->
-		<section id="welcome-hero" class="welcome-hero">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<div class="header-text">
-							<h2>hi <span>,</span> i am <br>  Maria Myers <span>.</span>   </h2>
-							<p>backend software developer</p>
-							<a href="assets/download/Maria_Myers_Resume.pdf" download target="_blank" >download resume</a>
-						</div><!--/.header-text-->
-					</div><!--/.col-->
-				</div><!-- /.row-->
-			</div><!-- /.container-->
-
-		</section><!--/.welcome-hero-->
-		<!--welcome-hero end -->
-
-		<!--about start -->
-		<section id="about" class="about">
-			<div class="section-heading text-center">
-				<h2>about me</h2>
-			</div>
-			<div class="container">
-				<div class="about-content">
-					<div class="row">
-						<div class="col-sm-offset-1 col-sm-5">
-							<div class="single-about-img">
-								<img src="assets/images/about/profile_image_1.jpg" alt="profile_image">
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="single-about-txt">
-								<h3>
-									I'm a software developer who finds joy in combining creativity with practicality. With a Bachelor's in Computer Engineering from Texas A&M University and a backend software development certification from Codecademy, I've honed my skills in software development.
-
-								</h3>
-								<p>
-									My approach to development is rooted in problem understanding and a keen sense of organization. Although I'm relatively new to the field, my background as an electrical engineer equips me with a detail-oriented mindset.
-								<br><br>
-									While my portfolio is in its early stages, I'm excited to embark on this journey, aiming to create efficient and user-friendly software solutions. Thank you for visiting, and I look forward to sharing my growth and future projects with you.
-								</p>
-								<!-- <div class="row">
-									<div class="col-sm-5">
-										<div class="single-about-add-info">
-											<h3>phone</h3>
-											<p>979-446-5230</p>
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="single-about-add-info">
-											<h3>email</h3>
-											<p>mvmyers@gmail.com</p>
-										</div>
-									</div>
-							
-								</div> -->
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-		</section><!--/.about-->
-		<!--about end -->
-		
-		<!--education start -->
-		<section id="education" class="education">
-							
-			
-		</section><!--/.education-->
-		<!--education end -->
-
-		<section id="education" class="education">
-			
-			<div class="section-heading text-center">
-			  <h2>Education</h2>
-			</div>
-		  
-			<div class="container">
-				<br>
-			
-					<div class = "row">
-						<div class="col-sm-offset-1 col-sm-5">
-							<div class="single-education-img">
-								<img src="assets/images/education/portfolio-education.jpg" alt="Education Image">
-							</div>
-						</div>
-
-						<div class = "col-sm-6">
-							
-							<h2>Texas A&M University</h2>
-							<h2>B.S. Computer Engineering</h2><br>
-							<p>
-								At Texas A&M, I thrived academically with a 3.96 GPA and actively participated in enriching extracurricular experiences. One standout moment was my participation in the <a href = "https://engineering.tamu.edu/news/2019/04/spacecraft-offers-up-virtual-reality-challenge-at-south-by-southwest-2019.html" target="_blank">SpaceCRAFT Exploration Challenge</a> during South by Southwest (SXSW) 2019. In this competition, I collaborated with a diverse group of students to program a VR robot using AI to rescue an astronaut stranded on a distant planet. <br>
-								Our team, Team ECENtric, achieved a remarkable third-place finish. This hands-on engineering experience not only honed my technical skills but also emphasized the importance of teamwork and perseverance.<br>
-								This competition was a turning point for me, making me realize the significance and power of programming. It was here that I decided to pursue further studies in this direction. 
-							</p>
-
-						</div>
-							
-						<!-- <div class = "col-sm-2">
-							<h2>2018 - 2021</h2>
-
-						</div> -->
-					</div>
-				  <!-- </div>
-				
-				</div>-->
-			  </div>  
-		  </section><!--/.education-->
-		  <!--education end -->
-
-		
-
-		<!--experience start -->
-		<section id="experience" class="experience">
-			<div class="section-heading text-center">
-				<h2>experience</h2>
-			</div>
-			<div class="container">
-				<div class="experience-content">
-						<div class="main-timeline">
-							<ul>
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2> 01/2022 - 06/2023</h2>
-													<h3>Instrument Engineer</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															ExxonMobil 
-														</h4>
-														<h5>Houston, TX</h5>
-														<p class="description">
-															• Lead development of onshore command center for 4 Guyana FPSOs that will reduce
-															operating costs and support remote operations and reliability.<br>
-															• Implemented R&D & robotics applications for plant optimization and automation to
-															decrease safety related incidents and increase capital gain from plant operation.<br>
-															• Supported plants through evaluating new instrumentation technology to increase plant
-															diagnostic and maintenance scheduling capability.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
-				
-
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>01/2021 - 12/2021</h2>
-													<h3>Senior Design Project Manager</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Texas A&M University
-														</h4>
-														<h5>College Station, TX</h5>
-														<p class="description">
-														
-															• Managed project timeline and lead communication between team and DOD sponsors.<br>
-															• Designed, populated and validated a PCB sensor matrix that detects fallen object and
-															displays its location.<br>
-															• Programmed Atmega328 MCU to communicate via Bluetooth with android application.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>06/2021 - 08/2021</h2>
-													<h3>Electrical Engineering Intern</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Houston Mechatronics
-														</h4>
-														<h5>Houston, TX</h5>
-														<p class="description">
-															• Decreased time drift by a factor of 4 on the Aquanaut by integrating a Real Time Clock
-															module with main computers. <br>
-															• Designed and populated PCB breakout board using Altium for Aquanaut computers’
-															testing assembly.<br>
-															• Created, simulated and built power circuit for Aquanaut computer testing assembly platform,
-															allowing for a low-cost power solution.<br>
-															• Created internal wiring and cable diagrams.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>08/2019 - 12/2019</h2>
-													<h3>Electrical Engineering Co-Op</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Olin Corporation
-														</h4>
-														<h5>Houston, TX</h5>
-														<p class="description">
-															• Created electrical power system simulation for Chlorine plant using ETAP
-															software enhancing safety, maintenance procedures, and reducing operation cost. <br>
-															• Initiated collaboration improvements within electrical team by introducing and
-															implementing Microsoft Teams into daily operations. <br>
-															• Conducted Relay Coordination study for Chlorine plants.
-														</p>
-												
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
-
-		
-
-							
-
-							</ul>
-						</div><!--.main-timeline-->
-					</div><!--.experience-content-->
-			</div>
-
-		</section><!--/.experience-->
-		<!--experience end -->
-
-		<!--skills start -->
-		<section id="skills" class="skills">
-			<div class="skill-content">
-				<div class="section-heading text-center">
-					<h2>skills</h2>
-				</div>
-				<div class="container col-md-offset-1" >
-					<div class = "single-skill-content">
-						<h4 class="title">
-							<strong>Technical Skills: </strong>
-						</h4>
-						<br>
-						<p class = "description col-md-offset-1">
-							<em>Programming:</em> JavaScript, Node.js, Express, C++, Python <br>						
-							<em>Tools:</em> Linux, Soldering, 3D-printing, LaTex<br>	
-							<em>Embedded:</em> Microcontrollers, Arduino, Raspberry Pi, NVIDIA Jetson<br>	
-							<em>Design:</em> Altium, MultiSim, LTspice, ETAP
-						</p>
-					</div>
-
-					<div class = "single-skill-content">
-						<h4 class="title">
-							<strong>Soft Skills: </strong>
-						</h4>
-						<br>
-						<p class = "description col-md-offset-1">
-							<em>Communication:</em> ability to effectively communicate complex technical concepts to stakeholders. <br>						
-							<em>Adaptability:</em> ability to learn new tools and technologies within a project deadline.<br>	
-							<em>Leadership:</em> ability to manage project tasks and schedules, ensuring on time and in scope delivery.<br>	
-						</p>
-					</div>
-				
-				<p>
-					
-					
-				</p>
-
-<!-- 						
-						<div >
-							<div class="single-skill-content">
-								<img src="assets/images/skills/npm.png" alt="NPM Image">
-							</div>
-							<span class="progressText">NPM</span>
-						</div>
-
-
-						<div >
-							<div class="single-skill-content">
-								<img src="assets/images/skills/react.png" alt="React Image">
-							</div>
-							<span class="progressText">React</span>
-						</div>
-
-						<div>
-							<div class="single-skill-content">
-								<img src="assets/images/skills/sql.png" alt="SQL Image">
-							</div>
-							<span class="progressText">SQL</span>
-						</div>
-
-						<div>
-							<div class="single-skill-content">
-								<img src="assets/images/skills/js.png" alt="JS Image">
-							</div>
-							<span class="progressText">JavaScript</span>
-						</div>
-					 -->
-
-
-					
-						<!-- <div class="col-md-3">
-							<div class="single-skill-content">
-								<img src="assets/images/skills/js.png" alt="NPM Image">
-							</div>
-							<span class="progressText">JavaScript</span>
-						</div> -->
-
-<!-- 
-						<div >
-							<div class="single-skill-content">
-								<img src="assets/images/skills/css.png" alt="React Image">
-							</div>
-							<span class="progressText">CSS</span>
-						</div>
-
-						<div >
-							<div class="single-skill-content">
-								<img src="assets/images/skills/html.png" alt="SQL Image">
-							</div>
-							<span class="progressText">HTML</span>
-						</div>
-
-						<div >
-							<div class="single-skill-content">
-								<img src="assets/images/skills/github.png" alt="JS Image">
-							</div>
-							<span class="progressText">GitHub</span>
-						</div> -->
-				
-				</div>	<!-- /.container -->		
-			</div><!-- /.skill-content-->
-
-	</section><!--/.skills-->
-	<!--skills end -->
-
-		<!--profiles start -->
-		<section id="profiles" class="profiles">
-			<div class="profiles-details">
-				<div class="section-heading text-center">
-					<h2>profiles</h2>
-				</div>
-				<div class="container">
-					<div class="profiles-content">
-						<div class="row">
-						
-							<div class="col-sm-3">
-								<div class="single-profile profile-no-border">
-									<div class="profile-txt">
-										<a href="https://github.com/dmimar382" target="_blank"><i class="flaticon-github-logo"></i></a>
-										<div class="profile-icon-name">github</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href="https://github.com/dmimar382" target="_blank"><i class="flaticon-github-logo"></i></a>
-											<div class="profile-icon-name">github</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile profile-no-border">
-									<div class="profile-txt">
-										<a href="https://www.linkedin.com/in/maria-dmit/" target="_blank"><i class="fa fa-linkedin" style="font-size:36px"></i></a>
-										<div class="profile-icon-name">LinkedIn</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href="https://www.linkedin.com/in/maria-dmit/" target="_blank"><i class="fa fa-linkedin" style="font-size:36px"></i></a>
-											<div class="profile-icon-name">LinkedIn</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</section><!--/.profiles-->
-		<!--profiles end -->
-
-		
-
-		
-
-		<!--contact start -->
-		<section id="contact" class="contact">
-			<div class="section-heading text-center">
-				<h2>contact me</h2>
-			</div>
-			<div class="container">
-				<div class="contact-content">
-					<div class="row">
-						<div class="col-md-offset-1 col-md-5 col-sm-6">
-							<div class="single-contact-box">
-								<div class="contact-form">
-									<form id ="contact-form" onsubmit="sendEmail() ;reset(); return false">
-										<div class="row">
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-												  <input type="text" class="form-control" id="name" placeholder="Name*" name="name" required>
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-													<input type="email" class="form-control" id="email" placeholder="Email*" name="email" required>
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<input type="text" class="form-control" id="subject" placeholder="Subject*" name="subject" required>
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<textarea class="form-control" rows="8" id="comment" placeholder="Message*" required></textarea>
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="single-contact-btn">
-													<button type="submit" value="Submit" class = "contact-btn">Submit </button>
-													<!-- <a class="contact-btn" href="#" role="button">submit</a> -->
-													
-												</div><!--/.single-single-contact-btn-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-									</form><!--/form-->
-									<div id="confirmationMessage"></div>
-									<script src="https://smtpjs.com/v3/smtp.js"></script>
-									<script>
-										function sendEmail(){
-											Email.send({
-												SecureToken: "60b2bddf-3b27-4b1f-8d1d-90ecb242b709",
-												To : 'mvmyers382@gmail.com',
-												From : "mvmyers382@gmail.com",
-												Subject : document.getElementById("subject").value,
-												Body : "Name: " + document.getElementById("name").value 
-												+ "<br> Email: " + document.getElementById("email").value
-												+ "<br> Subject: " + document.getElementById("subject").value
-												+ "<br> Message: " + document.getElementById("comment").value 
-											}).then(
-											message => alert("Message Recieved! I will be in touch.")
-											);
-										}
-									</script>
-								</div><!--/.contact-form-->
-							</div><!--/.single-contact-box-->
-						</div><!--/.col-->
-						<div class="col-md-offset-1 col-md-5 col-sm-6">
-							<div class="single-contact-box">
-								<div class="contact-adress">
-									<div class="contact-add-head">
-										<h3>Maria Myers</h3>
-										<p>backend software developer</p>
-									</div>
-									<div class="contact-add-info">
-										<div class="single-contact-add-info">
-											<h3>phone</h3>
-											<p>979-446-5230</p>
-										</div>
-										<div class="single-contact-add-info">
-											<h3>email</h3>
-											<p>mvmyers@gmail.com</p>
-										</div>
-										<div class="single-contact-add-info">
-											<h3>website</h3>
-											<p>
-												<a href="https://mvmyers.onrender.com">mvmyers.onrender.com</a>
-											</p>
-										</div>
-									</div>
-								</div><!--/.contact-adress-->
-						
-								</div><!--/.hm-foot-icon-->
-							</div><!--/.single-contact-box-->
-						</div><!--/.col-->
-					</div><!--/.row-->
-				</div><!--/.contact-content-->
-			</div><!--/.container-->
-
-		</section><!--/.contact-->
-		<!--contact end -->
+    <!--font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+    
+    <!-- title of site -->
+    <title>Maria's Portfolio</title>
 
 
 
-			<div id="scroll-Top">
-				<div class="return-to-top">
-					<i class="fa fa-angle-up " id="scroll-top" ></i>
-				</div>
-				
-			</div><!--/.scroll-Top-->
-			
-        </footer><!--/.footer-copyright-->
-		<!--footer-copyright end-->
-		
-		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+    <!--font-awesome.min.css-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
-		<script src="assets/js/jquery.js"></script>
-        
-        <!--modernizr.min.js-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		
-		<!--bootstrap.min.js-->
-        <script src="assets/js/bootstrap.min.js"></script>
-		
-		<!-- bootsnav js -->
-		<script src="assets/js/bootsnav.js"></script>
-		
-		<!-- jquery.sticky.js -->
-		<script src="assets/js/jquery.sticky.js"></script>
-		
-		<!-- for progress bar start-->
+    <!--flat icon css-->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
 
-		<!-- progressbar js -->
-		<script src="assets/js/progressbar.js"></script>
+    <!--animate.css-->
+    <link rel="stylesheet" href="assets/css/animate.css">
 
-		<!-- appear js -->
-		<script src="assets/js/jquery.appear.js"></script>
+    <!--owl.carousel.css-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 
-		<!-- for progress bar end -->
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-		<!--owl.carousel.js-->
-        <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- bootsnav -->
+    <link rel="stylesheet" href="assets/css/bootsnav.css" >	
+    
+    <!--style.css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!--responsive.css-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-		
-        
-        <!--Custom JS-->
-        <script src="assets/js/custom.js"></script>
-        
-    </body>
-	
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
