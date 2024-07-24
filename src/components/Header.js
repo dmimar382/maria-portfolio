@@ -17,10 +17,9 @@ const Header = () => {
                             <ul className="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                                 <li className="smooth-menu"><a href="about">About</a></li>
                                 <li className="smooth-menu"><a href="education">Education</a></li>
-                                <li className="smooth-menu"><a href="skills">Skills</a></li>
                                 <li className="smooth-menu"><a href="experience">Experience</a></li>
-                                <li className="smooth-menu"><a href="profiles">Profiles</a></li>
-                                <li className="smooth-menu"><a href="contact">Contact</a></li>
+                                <li className="smooth-menu"><a href="portfolio">Portfolio</a></li>
+                                <li className="smooth-menu"><a href="blog">Blog</a></li>
                             </ul>
                         </div>
                     </div>
