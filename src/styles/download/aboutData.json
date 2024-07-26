@@ -1,0 +1,10 @@
+{
+    "about_me": {
+      "description": [
+        "Growing up, I was always fascinated by abstract ideas and the workings of the world, thanks to the influence of my parents. This curiosity, paired with my artistic nature, led me to a love for creating and building things. I recently discovered that software development is the perfect medium to combine these talents, allowing me to create systems and solutions that can genuinely benefit people.",
+        "Currently, I'm transitioning into a career as a backend software engineer. One of the key projects I've worked on is IoTea - a platform that allows people to create and manage connections without needing to write any code. Here, I built a CLI application and containerized service that interacts seamlessly with AWS to create a testing environment for users' devices. This experience has deepened my understanding of complex systems and the importance of thoughtful architecture in software development.",
+        "I thrive on diving headfirst into new challenges, eager to learn and apply new concepts. I approach my work with a strong commitment to integrity and authenticity, constantly seeking to expand my knowledge and skills. This drive not only fuels my professional growth but also aligns with my core values of continual growth and making a positive impact.",
+        "Outside of tech, I am an avid artist, primarily working with acrylics but recently exploring the art of glasswork. I love the outdoors, particularly backpacking and hiking, and share my adventures with my beloved husband and two dogs. Additionally, I have a keen interest in psychology and human behavior, always curious about what drives people and how we connect with one another."
+      ]
+    }
+  }
