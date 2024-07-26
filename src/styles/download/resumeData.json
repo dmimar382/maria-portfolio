@@ -17,9 +17,16 @@
         "name": "Backend Software Engineer",
         "issuer": "Codecademy",
         "date": "12/23",
-        "details": [
-          "Developed comprehensive skills in JavaScript, Express.js, Node.js, and PostgreSQL, focusing on server-side application development, RESTful APIs, and secure database practices.",
-          "Implemented OAuth authentication and role-based access control within a personal finance application, enhancing data security and user-specific access to sensitive endpoints."
+        "skills": [
+          "JavaScript",
+          "Express.js",
+          "Node.js",
+          "PostgreSQL",
+          "Server-side Application Development",
+          "RESTful APIs",
+          "Secure Database Practices",
+          "OAuth Authentication",
+          "Role-based Access Control"
         ]
       }
     ],
@@ -89,6 +96,35 @@
     "professional_attributes": [
       "Technical Leadership", "Cross-Team Collaboration", "Efficiency Optimization", "Integration", 
       "Safety Enhancement", "Adaptive Learning", "Project Management"
+    ],
+    "relevant_coursework": [
+      {
+        "title": "Computer Science",
+        "courses": [
+          "Directed Studies-Robotics{CSCE 485}",
+          "Programming Studio{CSCE 315}",
+          "Intro to Computer Systems{CSCE 313}",
+          "Data Structures and Algorithms{CSCE 221}",
+          "Discrete Structures for Computing{CSCE 222}",
+          "Programming Design and Concepts{CSCE 121}"
+        ]
+      },
+      {
+        "title": "Electrical Engineering",
+        "courses": [
+          "Digital Integrated Circuit Design{ECEN 454}",
+          "Linear Control Systems{ECEN 420}",
+          "Microprocessor System Design{ECEN 449}",
+          "Computer Architecture and Design{ECEN 350}",
+          "Signals and Systems{ECEN 314}",
+          "Electronic Properties of Materials{ECEN 370}",
+          "Electronics{ECEN 325}",
+          "Random Signals and Systems{ECEN 303}",
+          "Digital System Design{ECEN 248}",
+          "Electrical Circuit Theory{ECEN 214}"
+        ]
+      }
     ]
+    
   }
   
