@@ -1,5 +1,5 @@
 import React from 'react';
-import resumeData from '../styles/download/resumeData.json';
+import resumeData from '../styles/data/resumeData.json';
 
 const Education = () => {
     const { institution, degree, gpa } = resumeData.education;

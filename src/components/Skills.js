@@ -1,6 +1,5 @@
 import React from 'react';
-import resumeData from '../styles/download/resumeData.json';
-// import './styles/css/Skills.css';
+import resumeData from '../styles/data/resumeData.json';
 
 
 const Skills = ({ topSkills, otherSkills }) => {

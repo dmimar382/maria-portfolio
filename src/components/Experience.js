@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import experienceData from '../styles/download/resumeData.json';
+import experienceData from '../styles/data/resumeData.json';
 import Skills from './Skills';  // Import the Skills component
 
 const Experience = () => {

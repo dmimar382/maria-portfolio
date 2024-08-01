@@ -1,6 +1,6 @@
 import React from 'react';
 import profileImage from '../styles/images/about/profile_image_1.jpg';
-import aboutData from '../styles/download/aboutData.json'; 
+import aboutData from '../styles/data/aboutData.json'; 
 
 const About = () => {
     const descriptionArray = aboutData.about_me?.description || [];
