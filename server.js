@@ -2,11 +2,13 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const mailgun = require('mailgun-js');
+const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, 'build')));
 
 const DOMAIN = process.env.REACT_APP_MAILGUN_DOMAIN;
 const mg = mailgun({apiKey: process.env.REACT_APP_MAILGUN_API_KEY, domain: DOMAIN});
@@ -32,5 +34,5 @@ app.post('/send', (req, res) => {
   });
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running`);
 });
