@@ -1,34 +1,47 @@
 import React from 'react';
-import educationImage from '../styles/images/education/portfolio-education.jpg';
+import resumeData from '../styles/data/resumeData.json';
 
 const Education = () => {
+    const { institution, degree, gpa } = resumeData.education;
+    const certifications = resumeData.certifications || [];
+    const relevantCoursework = resumeData.relevant_coursework || [];
+
     return (
-        <section id="education" class="education">
-			
-            <div class="section-heading text-center">
-            <h2>Education</h2>
+        <section id="education" className="education">
+            <div className="section-heading text-center">
+                <h2>Education</h2>
             </div>
-        
-            <div class="container">
-                <div class = "row">
-                    <div class="col-sm-offset-1 col-sm-5">
-                        <div class="single-education-img">
-                            <img src={educationImage} alt="Education Image"></img>
+            <div className="container">
+                <div className="certifications">
+                    {certifications.map((cert, index) => (
+                        <div key={index} className="cert-item">
+                            <h4>{cert.name}</h4>
+                            <p>{cert.issuer}</p>
+                            <p className="date">{cert.date}</p>
+                            <div className="cert-skills">
+                                {cert.skills.map((skill, i) => (
+                                    <span key={i} className="skill-tag">{skill}</span>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+                <div className="education-content">
+                    <div className="education-info">
+                        <h3>{degree}</h3>
+                        <p>{institution}</p>
+                        <p className="date">GPA: {gpa}</p>
+                    </div>
+                    <div className="relevant-coursework">
+                        <div className="course-tags">
+                            {relevantCoursework[0].courses.map((course, i) => (
+                                <span key={i} className="course-tag">{course}</span>
+                            ))}
                         </div>
                     </div>
-
-                    <div class = "col-sm-6">
-                        <h2>Texas A&M University</h2>
-                        <h2>B.S. Computer Engineering</h2>
-                        <p>
-                            At Texas A&M, I thrived academically with a 3.96 GPA and actively participated in enriching extracurricular experiences. One standout moment was my participation in the <a href = "https://engineering.tamu.edu/news/2019/04/spacecraft-offers-up-virtual-reality-challenge-at-south-by-southwest-2019.html" target="_blank">SpaceCRAFT Exploration Challenge</a> during South by Southwest (SXSW) 2019. In this competition, I collaborated with a diverse group of students to program a VR robot using AI to rescue an astronaut stranded on a distant planet.
-                            Our team, Team ECENtric, achieved a remarkable third-place finish. This hands-on engineering experience not only honed my technical skills but also emphasized the importance of teamwork and perseverance.
-                            This competition was a turning point for me, making me realize the significance and power of programming. It was here that I decided to pursue further studies in this direction. 
-                        </p>
-                    </div>
                 </div>
-            </div>  
-      </section>
+            </div>
+        </section>
     );
 };
 

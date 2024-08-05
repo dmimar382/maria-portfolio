@@ -1,24 +1,30 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+const posts = [
+  { id: 'post1', title: 'Test Post' },
+ 
+];
 
 const Blog = () => {
-    return (
-        <footer>
-            <div className="footer-copyright">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-sm-6">
-                            <p>&copy; Placeholder.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="scroll-Top">
-                <div className="return-to-top">
-                    <i className="fa fa-angle-up" id="scroll-top"></i>
-                </div>
-            </div>
-        </footer>
-    );
+  return (
+    <section className="blog">
+      <div className="section-heading text-center">
+        <h2>Posts</h2>
+      </div>
+      <div className="blog-section">
+        <div className="blog-content">
+          <ul className="blog-list">
+            {posts.map((post) => (
+              <li key={post.id} className="blog-card">
+                <h3><Link to={`/blog/${post.id}`}>{post.title}</Link></h3>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Blog;

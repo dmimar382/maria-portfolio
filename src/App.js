@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import WelcomeHero from './components/WelcomeHero';
 import Portfolio from './components/Portfolio';
 import Blog from './components/Blog';
+import Post from './components/Post';
 
 import './styles/css/style.css';
 import './styles/css/responsive.css';
@@ -21,7 +22,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'animate.css/animate.min.css';
 
-
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const App = () => {
     return (
@@ -36,7 +37,7 @@ const App = () => {
                     <Route path="/education" element={<Education />} />
                     <Route path="/portfolio" element={<Portfolio />} />
                     <Route path="/blog" element={<Blog />} />
-               
+                    <Route path="/blog/:postId" element={<Post />} />
                 </Routes>
                 <Contact />
             </div>

@@ -10,92 +10,18 @@ font-family: 'Poppins', sans-serif;
 
 
 /*=========== TABLE OF CONTENTS ===========
-1.  General css (Reset code)
+1.  General css  //located in index.css
 2.  Header
 3.  Welcome-hero
 4.  About me 
 5.  Education
 6.  Skill
 7.  Experience
+8.  Profiles
 9.  Portfolio
 10. Contact
+11. Blog
 
-/*-------------------------------------
-		1.General css (Reset code)
---------------------------------------*/
-*{
-    padding: 0;
-    margin: 0;
-}
-
-
-
-*{
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-o-box-sizing:border-box;
-	-ms-box-sizing:border-box;
-	box-sizing:border-box;
-}
-body{
-	font-family: 'Poppins', sans-serif;
-	font-size:16px;
-	color: #676a81;
-	background: #fff;
-    max-width:1920px;
-    margin:0 auto;
-	overflow-x:hidden;
-}
-
-a,a:hover,a:active,a:focus {
-	display:inline-block;
-	text-decoration:none;
-	color: #6a708e;
-	font-size:16px;
-	padding:0;
-}
-h1,h2,h3,h4,h5,h6 { 
-	margin: 0;
-	color:#43485c;
-    font-size: 16px;
-	font-family: 'Poppins', sans-serif;
-	text-transform: capitalize;
-}
-p {
-	margin: 0;
-	line-height:1.8;
-	color:#43485c;
-	font-size:14px;
-	font-family: 'Poppins', sans-serif;
-}
-img{max-width:100%; height:auto;}
-ul{
-	padding: 0;
-    margin: 0 auto;
-    list-style: none;
-}
-/* ul li {
-	/* list-style: none;
-	
-} */
-select,input,textarea,button{box-shadow:none;outline:0!important;}
-button {background: transparent;border: 0;}
-
-html,body{
-    height: 100%;
-	position: relative;
-}
-[placeholder]:focus::-webkit-input-placeholder {
-  -webkit-transition: opacity 0.3s 0.3s ease; 
-  -moz-transition: opacity 0.3s 0.3s ease; 
-  -ms-transition: opacity 0.3s 0.3s ease; 
-  -o-transition: opacity 0.3s 0.3s ease; 
-  transition: opacity 0.3s 0.3s ease; 
-  opacity: 0;
-}
-
-.fix{position: relative;clear: both;}
-/*=============Style css=========*/
 
 /*-------------------------------------
         2. Header
@@ -104,7 +30,7 @@ html,body{
     position: relative;
     z-index: 9999;
 }
-@media (min-width: 1024px){}
+
 nav.navbar.bootsnav.no-background {
     background-color: #fff;
     border: none;
@@ -152,8 +78,6 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: #d92cf9;}
 /*.nav li*/
 
-
-
 /*.menu-ui-design*/
 .menu-ui-design{overflow-y:scroll;height: 350px;}
 .menu-ui-design::-webkit-scrollbar {
@@ -166,8 +90,6 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
   background-color: #d92cf9;
 }
 /*.menu-ui-design*/
-
-
 
 /*.navbar-toggle */
 nav.navbar.bootsnav .navbar-toggle {
@@ -184,8 +106,6 @@ nav.navbar.bootsnav {
     background-color: #fff !important;
     
 }
-
-
 
 /*-------------------------------------
         3.  Welcome-hero
@@ -249,7 +169,7 @@ nav.navbar.bootsnav {
 /*-------------------------------------
         4.  About
 --------------------------------------*/
-.about {padding: 20px 0 0px;}
+.about {padding: 20px 0 20px;}
 .about-content {padding-top: 0px;}
 /*.single-about-txt*/
 .single-about-txt h3 {
@@ -259,12 +179,9 @@ nav.navbar.bootsnav {
     line-height: 1.8;
 }
 .single-about-txt p {
-    font-size: 14px;
+    font-size: 16px;
     color: #999fb3;
-    /* padding: 0px 0 0px; */
-    /* border-bottom: 1px solid #999fb3; */
 }
-
 /*.single-about-img */
 .single-about-img{position: relative;  max-width:100%; 
     height:auto; box-shadow: 0 5px 20px rgba(14,25,80,.30);}
@@ -283,23 +200,6 @@ nav.navbar.bootsnav {
     max-width: 100%;
     height: 100%;
 }
-
-.single-education-img{position: relative; max-width:100%; 
-    height:auto;}
-.single-education-img:before {
-    position:  absolute;
-    content: " ";
-    top: 0;
-    left:  0;
-    width: 100%;
-    height:  100%;
- 
-}
-/* .single-education-img img {
-    max-width: 500px;
-    height: 500px;
-} */
-
 .about-list-icon{
     display: flex;
     justify-content: center;
@@ -335,18 +235,62 @@ nav.navbar.bootsnav {
 .about-list-icon ul li a i {
     margin-left: 6px;
 }
-/*.ab-list-icon */
-
-/*.single-about-img */
 
 /*-------------------------------------
         5.  Education
 --------------------------------------*/
 
 .education {
-    background:  #f9fbfd;
-    padding-top:  20px;
-    padding-bottom:  20px;
+    background: #f9fbfd;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.cert-item, .education-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cert-item h4, .education-content h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.cert-item .date, .education-info .date {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.2em;
+    color: #888;
+}
+
+.certifications p, .education-info p {
+    font-size: 18px;
+    margin: 5px 0px 10px;
+}
+
+.cert-skills, .course-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.course-tag {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 5px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -470,7 +414,7 @@ nav.navbar.bootsnav {
 }
 
 .main-timeline .description li {
-    margin-bottom: 5px; /* Add some space between list items */
+    margin-bottom: 5px; 
 }
 
 .main-timeline .timeline-content.right{
@@ -615,7 +559,7 @@ nav.navbar.bootsnav {
 }
 
 /*-------------------------------------
-        11. Contact (Footer Style)
+        10. Contact (Footer Style)
 --------------------------------------*/
 .contact-footer {
     background: #f9fbfd;
@@ -714,6 +658,47 @@ nav.navbar.bootsnav {
     margin-bottom: 26px;
 }
 
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+  }
+  
+  .modal-container {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: none; /* Remove any borders */
+    text-align: center;
+  }
+  
+
+  .modal-content h4 {
+    margin-bottom: 20px;
+  }
+  
+  .modal-container button {
+    padding: 10px 20px;
+    background-color: #8a2be2; 
+    color: white;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .modal-container button:hover {
+    background-color: #9932cc; 
+  }
+
 
 .hm-foot-icon ul li{float:left;}
 .hm-foot-icon ul li>a {
@@ -735,52 +720,51 @@ nav.navbar.bootsnav {
     padding: 38px 0;
 }
 .hm-footer-copyright p a {color: #888ea5;}
-/*===============================
-    Scroll Top
-===============================*/
-#scroll-Top  .return-to-top {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    display: none;
-    width: 40px;
-    line-height: 40px;
-    height: 40px;
-    text-align: center;
-    font-size: 20px;
-    cursor: pointer;
-    color: #fff;
-    background:#b636ff;
-	border:1px solid #b636ff;
-	border-radius:50%;
-	-webkit-transition: .5s; 
-	-moz-transition:.5s; 
-	-ms-transition:.5s; 
-	-o-transition:.5s;
-    transition: .5s;
-	z-index: 2;
-}
-#scroll-Top  .return-to-top:hover {
-    background:#fff;
-    color: #b636ff;
-	border:1px solid #b636ff;
+
+/*-------------------------------------
+        11. Blog
+--------------------------------------*/
+
+.blog {
+    padding: 20px 0 20px;
 }
 
-#scroll-Top  .return-to-top i{
-    position:relative;
-    bottom:0;
+.blog-content, .post-content {
 
+    text-align: left; /* Align text to the left */
+    max-width: 800px; /* Set a maximum width to align with other content */
+    margin: 0 auto; /* Center the content */
+    line-height: 1.6; /* Improve readability */
 }
 
-#scroll-Top  .return-to-top i{
-    position: relative;
-    animation-name: example;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-duration:1s;
+.blog-section {
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
 }
-@keyframes example {
-    0%   {bottom:0px;}
-    100%  {bottom:7px;}
+
+
+.blog-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #e5ebf2;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.blog-card h3 a {
+    color: #8211a2; /* Primary color */
+    text-decoration: none;
+}
+
+.blog-card h3 a:hover {
+    text-decoration: underline;
+}
+
+.blog-card p {
+    color: #636a82;
+    font-size: 16px;
 }
 /*========================Thank you=================*/
