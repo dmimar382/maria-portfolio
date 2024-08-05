@@ -10,92 +10,18 @@ font-family: 'Poppins', sans-serif;
 
 
 /*=========== TABLE OF CONTENTS ===========
-1.  General css (Reset code)
+1.  General css  //located in index.css
 2.  Header
 3.  Welcome-hero
 4.  About me 
 5.  Education
 6.  Skill
 7.  Experience
+8.  Profiles
 9.  Portfolio
 10. Contact
+11. Blog
 
-/*-------------------------------------
-		1.General css (Reset code)
---------------------------------------*/
-*{
-    padding: 0;
-    margin: 0;
-}
-
-
-
-*{
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-o-box-sizing:border-box;
-	-ms-box-sizing:border-box;
-	box-sizing:border-box;
-}
-body{
-	font-family: 'Poppins', sans-serif;
-	font-size:16px;
-	color: #676a81;
-	background: #fff;
-    max-width:1920px;
-    margin:0 auto;
-	overflow-x:hidden;
-}
-
-a,a:hover,a:active,a:focus {
-	display:inline-block;
-	text-decoration:none;
-	color: #6a708e;
-	font-size:16px;
-	padding:0;
-}
-h1,h2,h3,h4,h5,h6 { 
-	margin: 0;
-	color:#43485c;
-    font-size: 16px;
-	font-family: 'Poppins', sans-serif;
-	text-transform: capitalize;
-}
-p {
-	margin: 0;
-	line-height:1.8;
-	color:#43485c;
-	font-size:14px;
-	font-family: 'Poppins', sans-serif;
-}
-img{max-width:100%; height:auto;}
-ul{
-	padding: 0;
-    margin: 0 auto;
-    list-style: none;
-}
-/* ul li {
-	/* list-style: none;
-	
-} */
-select,input,textarea,button{box-shadow:none;outline:0!important;}
-button {background: transparent;border: 0;}
-
-html,body{
-    height: 100%;
-	position: relative;
-}
-[placeholder]:focus::-webkit-input-placeholder {
-  -webkit-transition: opacity 0.3s 0.3s ease; 
-  -moz-transition: opacity 0.3s 0.3s ease; 
-  -ms-transition: opacity 0.3s 0.3s ease; 
-  -o-transition: opacity 0.3s 0.3s ease; 
-  transition: opacity 0.3s 0.3s ease; 
-  opacity: 0;
-}
-
-.fix{position: relative;clear: both;}
-/*=============Style css=========*/
 
 /*-------------------------------------
         2. Header
@@ -152,8 +78,6 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: #d92cf9;}
 /*.nav li*/
 
-
-
 /*.menu-ui-design*/
 .menu-ui-design{overflow-y:scroll;height: 350px;}
 .menu-ui-design::-webkit-scrollbar {
@@ -166,8 +90,6 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
   background-color: #d92cf9;
 }
 /*.menu-ui-design*/
-
-
 
 /*.navbar-toggle */
 nav.navbar.bootsnav .navbar-toggle {
@@ -184,8 +106,6 @@ nav.navbar.bootsnav {
     background-color: #fff !important;
     
 }
-
-
 
 /*-------------------------------------
         3.  Welcome-hero
@@ -261,10 +181,7 @@ nav.navbar.bootsnav {
 .single-about-txt p {
     font-size: 16px;
     color: #999fb3;
-    /* padding: 0px 0 0px; */
-    /* border-bottom: 1px solid #999fb3; */
 }
-
 /*.single-about-img */
 .single-about-img{position: relative;  max-width:100%; 
     height:auto; box-shadow: 0 5px 20px rgba(14,25,80,.30);}
@@ -283,9 +200,6 @@ nav.navbar.bootsnav {
     max-width: 100%;
     height: 100%;
 }
-
-
-
 .about-list-icon{
     display: flex;
     justify-content: center;
@@ -321,9 +235,6 @@ nav.navbar.bootsnav {
 .about-list-icon ul li a i {
     margin-left: 6px;
 }
-/*.ab-list-icon */
-
-/*.single-about-img */
 
 /*-------------------------------------
         5.  Education
@@ -361,7 +272,6 @@ nav.navbar.bootsnav {
     font-size: 1.2em;
     color: #888;
 }
-
 
 .certifications p, .education-info p {
     font-size: 18px;
@@ -504,7 +414,7 @@ nav.navbar.bootsnav {
 }
 
 .main-timeline .description li {
-    margin-bottom: 5px; /* Add some space between list items */
+    margin-bottom: 5px; 
 }
 
 .main-timeline .timeline-content.right{
@@ -649,7 +559,7 @@ nav.navbar.bootsnav {
 }
 
 /*-------------------------------------
-        11. Contact (Footer Style)
+        10. Contact (Footer Style)
 --------------------------------------*/
 .contact-footer {
     background: #f9fbfd;
@@ -748,6 +658,47 @@ nav.navbar.bootsnav {
     margin-bottom: 26px;
 }
 
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+  }
+  
+  .modal-container {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: none; /* Remove any borders */
+    text-align: center;
+  }
+  
+
+  .modal-content h4 {
+    margin-bottom: 20px;
+  }
+  
+  .modal-container button {
+    padding: 10px 20px;
+    background-color: #8a2be2; 
+    color: white;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .modal-container button:hover {
+    background-color: #9932cc; 
+  }
+
 
 .hm-foot-icon ul li{float:left;}
 .hm-foot-icon ul li>a {
@@ -771,17 +722,12 @@ nav.navbar.bootsnav {
 .hm-footer-copyright p a {color: #888ea5;}
 
 /*-------------------------------------
-        12. Blog
+        11. Blog
 --------------------------------------*/
 
 .blog {
     padding: 20px 0 20px;
-
 }
-
-/* .blog-content {
-    padding-top: 10px;
-} */
 
 .blog-content, .post-content {
 
@@ -818,7 +764,7 @@ nav.navbar.bootsnav {
 }
 
 .blog-card p {
-    color: #636a82; /* Secondary text color */
+    color: #636a82;
     font-size: 16px;
 }
 /*========================Thank you=================*/

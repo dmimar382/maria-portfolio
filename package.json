@@ -11,9 +11,13 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
     "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
     "github-calendar": "^2.3.4",
     "jquery": "^3.7.1",
+    "mailgun-js": "^0.22.0",
     "owl.carousel": "^2.3.4",
     "popper.js": "^1.16.1",
     "react": "^18.3.1",
@@ -22,6 +26,7 @@
     "react-github-calendar": "^4.1.6",
     "react-helmet-async": "^2.0.5",
     "react-markdown": "^9.0.1",
+    "react-modal": "^3.16.1",
     "react-owl-carousel": "^2.3.3",
     "react-router-bootstrap": "^0.26.3",
     "react-router-dom": "^6.25.1",
@@ -51,5 +56,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This repository contains the source code for my personal portfolio website, showcasing my projects, skills, and experience as a software engineer.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "proxy": "http://localhost:5000"
 }

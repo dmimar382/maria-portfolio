@@ -14,6 +14,12 @@
     },
     "certifications": [
       {
+        "name": "AWS Solutions Architect Associate",
+        "issuer": "Amazon Web Services",
+        "date": "in progress",
+        "skills": []
+      },
+      {
         "name": "Backend Software Engineer",
         "issuer": "Codecademy",
         "date": "12/23",
