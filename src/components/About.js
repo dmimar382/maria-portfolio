@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from '../styles/images/about/profile_image_1.jpg';
+import profileImage from '../styles/images/about/profile_image_1.webp';
 import aboutData from '../styles/data/aboutData.json'; 
 
 const About = () => {

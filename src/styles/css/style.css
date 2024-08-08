@@ -23,9 +23,19 @@ font-family: 'Poppins', sans-serif;
 11. Blog
 
 
+
+
 /*-------------------------------------
         2. Header
 --------------------------------------*/
+
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&subset=devanagari,latin-ext') format('woff2');
+    font-display: swap;
+  }
+  
 .top-area {
     position: relative;
     z-index: 9999;
@@ -45,7 +55,7 @@ nav.navbar.bootsnav {
 /*.navbar-brand*/
 .navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus {
     display: inline-block;
-    color: #d92cf9;
+    color: #9206AD;
     font-size: 20px;
     font-weight: 600;
     padding: 33px 0px 57px;
@@ -65,7 +75,7 @@ nav.navbar.bootsnav ul.nav > li > a {
     transition: 0.3s linear;
 }
 nav.navbar.bootsnav ul.nav > li > a {padding: 35px 20px;}
-nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus,nav.navbar.bootsnav ul.nav > li.active>a{color: #d92cf9;}
+nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus,nav.navbar.bootsnav ul.nav > li.active>a{color: #9206AD;}
 
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after {
     content: "";
@@ -75,7 +85,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     margin-left: 15px;
 }
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {color:#6a708e;}
-.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: #d92cf9;}
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: #9206AD;}
 /*.nav li*/
 
 /*.menu-ui-design*/
@@ -87,7 +97,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     -webkit-box-shadow: inset 0 0 8px #000;
 }
 .menu-ui-design::-webkit-scrollbar-thumb {
-  background-color: #d92cf9;
+  background-color: #9206AD;
 }
 /*.menu-ui-design*/
 
@@ -95,11 +105,11 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
 nav.navbar.bootsnav .navbar-toggle {
     position: relative;
     background-color: transparent;
-    border: 1px solid #d92cf9;
+    border: 1px solid #9206AD;
     padding: 10px;
     top: 0;
 }
-nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
+nav.navbar.bootsnav .navbar-toggle i{color: #9206AD;}
 /*.navbar-toggle */
 
 nav.navbar.bootsnav {
@@ -115,7 +125,7 @@ nav.navbar.bootsnav {
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(../images/about/background3.jpg)no-repeat;
+    background:url(../images/about/background3.webp)no-repeat;
     background-size:cover;
     background-position: center;
     height:890px;
@@ -138,7 +148,7 @@ nav.navbar.bootsnav {
     text-transform: uppercase;
     line-height: 1.5;
 }
-.header-text h2 span {color: #d92cf9;}
+.header-text h2 span {color: #9206AD;}
 .header-text p {
     color: #fff;
     font-size: 20px;
@@ -154,8 +164,8 @@ nav.navbar.bootsnav {
     border-radius: 3px;
     text-transform: capitalize;
     color: #fff;
-    background: #b636ff;
-    border:1px solid #b636ff;
+    background: #9206AD;
+    border:1px solid #9206AD;
     box-shadow: 0 5px 20px rgba(0,0,0,.2);
     -webkit-transition: 0.3s linear; 
     -moz-transition: 0.3s linear; 
@@ -163,7 +173,7 @@ nav.navbar.bootsnav {
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
 }
-.header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#9f00ff;border: 1px solid #9f00ff;}
+.header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#84059e;border: 1px solid #9206AD;}
 /*.header-text-area*/
 
 /*-------------------------------------
@@ -390,7 +400,7 @@ nav.navbar.bootsnav {
 }
 
 .timeline-content span>i, .experience-time span>i {
-    color: #d92cf9;
+    color: #9206AD;
     position: absolute;
     font-size: 10px;
     left: -14.5%;
@@ -480,11 +490,11 @@ nav.navbar.bootsnav {
     content: " ";
     width:100%;
     height: 100%;
-    background: #d92cf9;
-    background: -moz-linear-gradient(left, #d92cf9 0%, #b636ff 100%);
-    background: -webkit-linear-gradient(left, #d92cf9 0%,#b636ff 100%);
-    background: linear-gradient(to right, #d92cf9 0%,#b636ff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d92cf9', endColorstr='#b636ff',GradientType=1 );
+    background: #9206AD;
+    background: -moz-linear-gradient(left, #9206AD 0%, #b636ff 100%);
+    background: -webkit-linear-gradient(left, #9206AD 0%,#b636ff 100%);
+    background: linear-gradient(to right, #9206AD 0%,#b636ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9206AD', endColorstr='#b636ff',GradientType=1 );
     -webkit-transform:scale(0);
     -moz-transform:scale(0);
     -ms-transform:scale(0);
@@ -504,7 +514,7 @@ nav.navbar.bootsnav {
     transform:scale(1);
     top:0;
 }
-.single-profile:hover .profile-icon-name,.single-profile:hover .profile-txt a>i{color: #8211a2;}
+.single-profile:hover .profile-icon-name,.single-profile:hover .profile-txt a>i{color: #9206AD;}
 
 /*-------------------------------------
         9. Portfolio
@@ -545,7 +555,7 @@ nav.navbar.bootsnav {
 }
 
 .project-card h3 a {
-    color: #d92cf9; /* Primary color */
+    color: #9206AD; /* Primary color */
     text-decoration: none;
 }
 
@@ -687,7 +697,7 @@ nav.navbar.bootsnav {
   
   .modal-container button {
     padding: 10px 20px;
-    background-color: #8a2be2; 
+    background-color: #9206AD;
     color: white;
     border: none; 
     border-radius: 5px;
@@ -696,7 +706,7 @@ nav.navbar.bootsnav {
   }
   
   .modal-container button:hover {
-    background-color: #9932cc; 
+    background-color: #9206AD;
   }
 
 
@@ -711,7 +721,7 @@ nav.navbar.bootsnav {
     transition: .3s;
 }
 .hm-foot-icon ul li>a:hover{
-    color: #b636ff;
+    color: #9206AD;
 }/*hm-foot-icon*/
 
 .hm-footer-copyright p{
@@ -755,7 +765,7 @@ nav.navbar.bootsnav {
 }
 
 .blog-card h3 a {
-    color: #8211a2; /* Primary color */
+    color: #9206AD; /* Primary color */
     text-decoration: none;
 }
 

@@ -125,7 +125,7 @@ const Contact = () => {
                         <div className="col-sm-3">
                         <div className="single-profile profile-no-border">
                             <div className="profile-txt">
-                            <a href="https://github.com/dmimar382" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/dmimar382" target="_blank" aria-label="Github-Link" rel="noopener noreferrer">
                                 <i className="flaticon-github-logo"></i>
                             </a>
                             <div className="profile-icon-name">Github</div>
@@ -135,7 +135,7 @@ const Contact = () => {
                         <div className="col-sm-3">
                         <div className="single-profile profile-no-border">
                             <div className="profile-txt">
-                            <a href="https://www.linkedin.com/in/maria-dmit/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/maria-dmit/" target="_blank" aria-label="Linkedin-Link" rel="noopener noreferrer">
                                 <i className="fa-brands fa-linkedin" style={{ fontSize: "36px" }}></i>
                             </a>
                             <div className="profile-icon-name">LinkedIn</div>

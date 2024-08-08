@@ -10,7 +10,7 @@ const Header = () => {
                 <nav className="navbar navbar-default bootsnav navbar-fixed dark no-background">
                     <div className="container">
                         <div className="navbar-header">
-                            <button type="button" className="navbar-toggle" onClick={() => setIsNavCollapsed(prev => !prev)}>
+                            <button type="button" className="navbar-toggle" aria-label="Navigation" onClick={() => setIsNavCollapsed(prev => !prev)}>
                                 <i className="fa fa-bars"></i>
                             </button>
                             <Link className="navbar-brand" to="/">Maria Myers</Link>
