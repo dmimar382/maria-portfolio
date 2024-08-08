@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     const [isNavCollapsed, setIsNavCollapsed] = useState(true); // Controls the mobile navbar toggle
 
+    const handleNavLinkClick = () => {
+        setIsNavCollapsed(true);
+    };
+
     return (
         <header className="top-area">
             <div className="header-area">
@@ -17,11 +21,11 @@ const Header = () => {
                         </div>
                         <div className={`collapse navbar-collapse menu-ui-design ${isNavCollapsed ? 'collapse' : 'in'}`}>
                             <ul className="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                                <li className="smooth-menu"><Link to="/about">About</Link></li>
-                                <li className="smooth-menu"><Link to="/education">Education</Link></li>
-                                <li className="smooth-menu"><Link to="/experience">Experience</Link></li>
-                                <li className="smooth-menu"><Link to="/portfolio">Portfolio</Link></li>
-                                <li className="smooth-menu"><Link to="/blog">Blog</Link></li>
+                                <li className="smooth-menu"><Link to="/about" onClick={handleNavLinkClick}>About</Link></li>
+                                <li className="smooth-menu"><Link to="/education" onClick={handleNavLinkClick}>Education</Link></li>
+                                <li className="smooth-menu"><Link to="/experience" onClick={handleNavLinkClick}>Experience</Link></li>
+                                <li className="smooth-menu"><Link to="/portfolio" onClick={handleNavLinkClick}>Portfolio</Link></li>
+                                <li className="smooth-menu"><Link to="/blog" onClick={handleNavLinkClick}>Blog</Link></li>
                             </ul>
                         </div>
                     </div>
