@@ -122,7 +122,7 @@ const Contact = () => {
                     <div className="single-contact-add-info">
                       <h3>Profiles</h3>
                       <div className="row profiles">
-                        <div className="col-sm-3">
+                        <div className="col-xs-6">
                         <div className="single-profile profile-no-border">
                             <div className="profile-txt">
                             <a href="https://github.com/dmimar382" target="_blank" aria-label="Github-Link" rel="noopener noreferrer">
@@ -132,7 +132,7 @@ const Contact = () => {
                             </div>
                         </div>
                         </div>
-                        <div className="col-sm-3">
+                        <div className="col-xs-6">
                         <div className="single-profile profile-no-border">
                             <div className="profile-txt">
                             <a href="https://www.linkedin.com/in/maria-dmit/" target="_blank" aria-label="Linkedin-Link" rel="noopener noreferrer">
