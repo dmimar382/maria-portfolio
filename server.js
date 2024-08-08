@@ -12,13 +12,14 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 const DOMAIN = process.env.REACT_APP_MAILGUN_DOMAIN;
 const mg = mailgun({apiKey: process.env.REACT_APP_MAILGUN_API_KEY, domain: DOMAIN});
-const myEmail = process.env.MY_EMAIL;
+const fromEmail = process.env.FROM_EMAIL;
+const toEmail = process.env.TO_EMAIL;
 
 app.post('/send', (req, res) => {
     const { name, email, subject, message } = req.body;
     const data = {
-      from: myEmail,  
-      to: myEmail,    
+      from: fromEmail,  
+      to: toEmail,    
       subject: subject,
       text: `Message from: ${name} <${email}>\nSubject: ${subject}\nMessage: ${message}`
     };
